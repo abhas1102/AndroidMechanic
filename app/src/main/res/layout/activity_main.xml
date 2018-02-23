@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mechanic_front2"
+    tools:context="com.example.helper.androidmechanic.MainActivity">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:orientation="vertical"
+       android:layout_centerHorizontal="true"
+       android:gravity="center_horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="A L O"
+          android:textSize="36sp"
+          android:textAlignment="center"
+          android:textColor="@android:color/white"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="PARTNER"
+          android:textSize="16sp"
+          android:textAlignment="center"
+          android:textColor="@android:color/white"/>
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/txt_mech_app"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="20dp"
+       android:layout_marginTop="20dp"
+       android:text="LOOKING FOR THE MECHANIC APP"
+       android:textSize="12sp"
+       android:textAlignment="center"
+       android:textColor="@color/bottomText"/>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:layout_above="@+id/txt_mech_app"
+       android:layout_margin="16dp"
+       android:layout_centerHorizontal="true">
+
+      <Button
+          android:id="@+id/btnSignIn"
+          android:textColor="@android:color/white"
+          android:background="@drawable/btn_sign_in_background"
+          android:text="SIGN IN"
+          android:layout_marginRight="6dp"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"/>
+
+      <Button
+          android:id="@+id/btnRegister"
+          android:textColor="@color/btnRegister"
+          android:background="@drawable/btn_register_background"
+          android:text="REGISTER"
+          android:layout_marginLeft="6dp"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+
+</RelativeLayout>
